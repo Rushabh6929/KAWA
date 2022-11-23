@@ -1,0 +1,369 @@
+.body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.background{
+background-color: black;
+
+}
+
+.background .image-fluid{
+    width: 100%;
+    height: auto;
+
+}
+
+
+.heading-firstpage {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 25px;
+    letter-spacing: 0.2rem;
+    text-shadow: #040404 4px 4px 2px;
+    /* border: 2px solid chartreuse; */
+}
+
+/* MEDIA QUERY SURU */
+
+@media only screen and (min-width: 280px) and (max-width: 495px) {
+  .heading-firstpage {
+    position: absolute;
+    margin-top: -16rem;
+    
+}
+
+.heading-firstpage {
+/* color: red !important; */
+font-size: 10px !important;
+letter-spacing: 0.1rem !important;
+
+
+}
+.navbar-expand-lg .navbar-collapse{
+  background-color: black;
+}
+}
+
+@media only screen and (min-width: 496px) and (max-width: 750px) {
+  .heading-firstpage {
+    position: absolute;
+    margin-top: -9rem;
+	
+}
+}
+@media only screen and (min-width: 756px) and (max-width: 900px) {
+  .heading-firstpage {
+    position: absolute;
+    margin-top: -15rem;
+	
+}
+}
+
+/* MEDIA QUERY SAMPLI */
+
+
+.navbar .navbar-brand{
+    font-family: 'Poppins', sans-serif;
+/* border: 2px solid chartreuse; */
+padding: 0;
+}
+
+.navbar{
+    /* border: 2px solid chartreuse; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    padding: 0;   
+   
+}
+
+
+#navbarResponsive > ul > li:nth-child(5) > a {
+  position: relative;
+  display: inline-block;
+  }
+
+
+/* Dropdown CONTACT US WALA */
+.dropbtn {
+  background-color: transparent;
+  color: inherit;
+  padding: 8px;
+  font-size: inherit;
+  border: none;
+  color: white;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  border: 1.5px rgba(130, 130, 130, 0.308) solid;
+  background-color: rgba(90, 88, 88, 0.812);
+  padding-inline: 3px ;
+  font: white;
+  display: none;
+  position: absolute;
+  opacity: 0.5;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  border-bottom: 1.5px rgba(130, 130, 130, 0.308) solid;
+  font-family: inherit;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+/* .navbar-dark .navbar-toggler :hover  {
+  border: 0.2px solid rgba(169, 184, 151, 0.856) !important; 
+} */
+
+.dropdown-content a:hover 
+{background-color: rgb(184, 184, 184);
+color:black;
+
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white !important ;
+
+  
+}
+
+/* .navbar-expand-lg .navbar-collapse{
+  background-color: black !important
+} */
+
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("assests/white-paw-print-transparent-background.png")!important;
+}
+
+
+
+.dropdown:hover .dropdown-content
+{display: block;
+    background-color: black;
+    opacity: 1;
+    
+    }
+
+
+   
+/* Dropdown CONTACT US WALA */
+
+.nav-item :hover{
+  /* color: white!important; */
+  opacity: 1;
+  text-decoration:solid;
+  }
+
+ /* NAVBAR SCROOL BG DARK */
+.navbar-scrolled{
+background-color: black;
+box-shadow: 0 3px 10px rgba(0,0,0,0.2)(0, 0, 0, 1.15);
+}
+
+.navbar{
+  transition: all 0.8s;
+}
+
+
+
+
+
+
+
+
+
+ /* NAVBAR SCROOL BG DARK */
+
+/* FOOT STEPS SURU */
+.wrap {
+    position:fixed;
+    top: 1em;
+    width: 100%;
+    transform: rotate(-130deg);
+    size-adjust: inherit;
+    /* border: 1px red solid; */
+    margin-top: 10em;
+
+    
+}
+
+.animated {
+  visibility: visible;
+}
+  .upper, .lower {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2em;
+  }
+  .lower {
+    margin-left: 1em;
+    position: relative;
+    top: 0px;
+    justify-content: space-between;
+  }
+  
+  .upper img, .lower img {
+    width: 2em;
+    height: 2em;
+    opacity: 0;
+    animation: fadeIn, fadeOut;
+    animation-duration: 9s, 9s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  @keyframes fadeIn {
+    10% {opacity: 1};
+    100% {opacity: 1};
+  }
+  @keyframes fadeOut {
+    25% {opacity: 0};
+    100% {opacity: 0};
+  }
+  
+  .upper img:first-child {
+    animation-delay: 0.5s, 3.5s;
+  }
+  .lower img:first-child {
+    animation-delay: 1s, 4s;  
+  }
+  .upper img:nth-child(2) {
+    animation-delay: 1.5s, 4.5s;
+  }
+  .lower img:nth-child(2) {
+    animation-delay: 2s, 5s;
+  }
+  .upper img:nth-child(3) {
+    animation-delay: 2.5s, 5.5s;
+  }
+  .lower img:nth-child(3) {
+    animation-delay: 3s, 6s;  
+  }
+  .upper img:nth-child(4) {
+    animation-delay: 3.5s, 6.5s;
+  }
+  .lower img:nth-child(4) {
+    animation-delay: 4s, 7s;
+  }
+  .upper img:nth-child(5) {
+    animation-delay: 4.5s, 7.5s;
+  }
+  .lower img:nth-child(5) {
+    animation-delay: 5s, 8s;  
+  }
+  .upper img:nth-child(6) {
+    animation-delay: 5.5s, 8.5s;
+  }
+  .lower img:nth-child(6) {
+    animation-delay: 6s, 9s;
+  }
+  .upper img:nth-child(7) {
+    animation-delay: 6.5s, 9.5s;
+  }
+  .lower img:nth-child(7) {
+    animation-delay: 7s, 10s;  
+  }
+  .upper img:nth-child(8) {
+    animation-delay: 7.5s, 10.5s;
+  }
+  .lower img:nth-child(8) {
+    animation-delay: 8s, 11s;
+  }
+  
+
+
+
+.wrap::after {
+    content: "";
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: relative;
+    z-index: -1;   
+    margin-top: -10rem;
+  }
+/* FOOT STEPS SAMPLI */
+
+
+/* COUNTER WALE SURU */
+
+
+.container{
+z-index: -1;
+}
+p{
+text-align: center;
+}
+
+
+
+/* COUNTER WALE SAMPLI */
+
+body > div.container-fluid.offset.pb-4.p-1.justify-content-center.mx-auto.d-block.img-fluid{
+  /* background-image: url('assests/FOR\ BG.jpg'); */
+  background-repeat: no-repeat;
+  object-fit: contain;
+  object-fit: fill;
+  background-color: black;
+}
+
+
+
+.container-fluid .First-Circle
+{
+  justify-content: center;
+  position:relative;
+
+}
+
+body > div.container-fluid.offset .col-sm.img-fluid
+{
+  /* border: orange 1px solid; */
+}
+
+body > div.container-fluid.offset .col-sm.img-fluid> img{
+  
+  /* border: green 1px solid; */
+  height: 10em;
+  margin-top: -3em;
+  }
+
+
+  @media  Screen and (max-width: 500px) { 
+    .upper img, .lower img {
+      width: 1em;
+      height: 1em;
+    }
+
+    .upper, .lower {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding: 1em;
+    }
+
+  }
